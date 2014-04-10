@@ -1,0 +1,4 @@
+Read in details at my blog[http://wittawasw.com/blog/2014/04/10/backend-once-and-client-everywhere-with-rails-api/]
+
+Frontend demo at Google App Engine[http://rails-angular-backend-demo.appspot.com/] or jsFidddle[http://jsfiddle.net/unstartable/jeNq2/]
+Backend demo at Heroku[http://rails-angularjs-backend-demo.herokuapp.com/]
