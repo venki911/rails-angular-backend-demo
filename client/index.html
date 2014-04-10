@@ -10,9 +10,9 @@
       <div class="row">
           <div class="col-md-12">
             <form class="col-md-6" ng-submit="addContact()">
-              <input type="text" ng-model="contact.name"  size="30"
+              <input type="text" required ng-model="contact.name"  size="30"
                      placeholder="Name">
-              <input type="email" ng-model="email"  size="30"
+              <input type="email" required ng-model="contact.email"  size="30"
                      placeholder="Email">
               <input class="btn-primary" type="submit" value="add">
             </form>

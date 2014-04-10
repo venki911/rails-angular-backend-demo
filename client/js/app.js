@@ -8,7 +8,7 @@ function ContactCtrl($scope, $http) {
         method : 'POST',
         url : 'http://localhost:5010/contacts',
         headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'},
-        data : $scope.contact
+        data : angular.toJson({"contact":$scope.contact})
     }).then(function(data){ 
       console.log(data)   
     });

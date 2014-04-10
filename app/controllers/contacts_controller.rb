@@ -18,7 +18,8 @@ class ContactsController < ApplicationController
   # POST /contacts
   # POST /contacts.json
   def create
-    @contact = Contact.new(params[:contact])
+    puts params[:contact]
+    @contact = Contact.new(contact_params)
 
     if @contact.save
       render json: @contact, status: :created, location: @contact
@@ -46,5 +47,11 @@ class ContactsController < ApplicationController
     @contact.destroy
 
     head :no_content
+  end
+
+  private
+
+  def contact_params
+    params.require(:contact).permit(:name, :email)
   end
 end
