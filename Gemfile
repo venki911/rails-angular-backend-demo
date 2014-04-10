@@ -5,8 +5,8 @@ gem 'rails', '4.0.0'
 
 gem 'rails-api'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use postgres as the database for Active Record
+gem 'pg'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
