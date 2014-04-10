@@ -1,5 +1,6 @@
 ContactApi::Application.routes.draw do
   resources :contacts, except: [:new, :edit]
+  root to: 'contact#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
