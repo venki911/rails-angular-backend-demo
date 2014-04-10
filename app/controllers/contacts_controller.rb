@@ -18,7 +18,6 @@ class ContactsController < ApplicationController
   # POST /contacts
   # POST /contacts.json
   def create
-    puts params[:contact]
     @contact = Contact.new(contact_params)
 
     if @contact.save
@@ -33,7 +32,7 @@ class ContactsController < ApplicationController
   def update
     @contact = Contact.find(params[:id])
 
-    if @contact.update(params[:contact])
+    if @contact.update(contact_params)
       head :no_content
     else
       render json: @contact.errors, status: :unprocessable_entity
