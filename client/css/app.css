@@ -1,0 +1,7 @@
+.card{
+  background-color: #82eeee;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  margin: 10px 0 0 10px;
+}
